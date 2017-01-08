@@ -335,8 +335,10 @@ open class YAxisRenderer: AxisRendererBase
             
             context.setStrokeColor(l.lineColor.cgColor)
             context.setLineWidth(l.lineWidth)
+
             if l.lineDashLengths != nil
             {
+                context.setLineCap(l.lineCap)
                 context.setLineDash(phase: l.lineDashPhase, lengths: l.lineDashLengths!)
             }
             else

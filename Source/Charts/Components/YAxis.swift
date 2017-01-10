@@ -40,6 +40,8 @@ open class YAxis: AxisBase
     
     /// indicates if the bottom y-label entry is drawn or not
     open var drawBottomYLabelEntryEnabled = true
+
+    open var zeroLineLineCap: CGLineCap = .butt
     
     /// indicates if the top y-label entry is drawn or not
     open var drawTopYLabelEntryEnabled = true

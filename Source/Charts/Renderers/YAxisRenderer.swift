@@ -275,6 +275,7 @@ open class YAxisRenderer: AxisRendererBase
     
         if yAxis.zeroLineDashLengths != nil
         {
+            context.setLineCap(yAxis.zeroLineLineCap)
             context.setLineDash(phase: yAxis.zeroLineDashPhase, lengths: yAxis.zeroLineDashLengths!)
         }
         else
